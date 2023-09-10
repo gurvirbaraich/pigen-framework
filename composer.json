@@ -1,0 +1,18 @@
+{
+    "name": "baraich/pigen",
+    "description": "A next generation php framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pigen\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gurvir Singh"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^6.3"
+    }
+}
