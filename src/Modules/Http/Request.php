@@ -29,8 +29,6 @@ class Request
       'path' => getRequestPath(),
       'method' => getRequestMethod(),
     ];
-
-    dd(self::$properties);
   }
 
   public static function capture(): Request
@@ -41,6 +39,10 @@ class Request
   public function __get($name)
   {
     return self::$parameters[$name] ?? self::$properties[$name];
+  }
+
+  public function getProperties() {
+    return self::$properties;
   }
 
   public function all(): array {
